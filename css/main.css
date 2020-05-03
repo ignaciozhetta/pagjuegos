@@ -2092,7 +2092,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-gap {
-  padding: 120px 0;
+  padding: 13px 0;
 }
 
 .section-title {
@@ -2725,7 +2725,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-area {
   padding-top: 100px;
-  background-color: #274454;
+  background-color: #000;
 }
 
 h6 {
@@ -2733,6 +2733,7 @@ h6 {
   margin-bottom: 25px;
   font-size: 18px;
   font-weight: 600;
+  text-align: center;
 }
 
 .copy-right-text i, .copy-right-text a {
@@ -2741,6 +2742,7 @@ h6 {
 
 .footer-social a {
   padding-right: 25px;
+  text-align: center;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -2757,8 +2759,17 @@ h6 {
 
 @media (max-width: 991px) {
   .footer-social {
-    text-align: left;
+    text-align: center;
   }
+}
+
+.f1{
+  text-align: center;
+}
+
+.copyr p{
+  text-align: center;
+  margin: 30px 0px;
 }
 
 .single-footer-widget input {
@@ -2854,6 +2865,7 @@ h6 {
 @media (max-width: 991px) {
   .single-footer-widget {
     margin-bottom: 30px;
+    text-align: center;
   }
 }
 
