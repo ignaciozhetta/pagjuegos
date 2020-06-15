@@ -186,7 +186,7 @@ td, th {
   bottom: 0;
   left: 0px;
   width: 60%;
-  background: #A8CED0;
+  background: #F0FFFF;
   opacity: 0.7;
   -webkit-transform: skewX(-45deg);
   -ms-transform: skewX(-45deg);
@@ -200,7 +200,7 @@ td, th {
   bottom: 0;
   left: 1px;
   width: 100%;
-  background: #F4FC99;
+  background: #7FFFD4;
   opacity: 0.7;
   -webkit-transform: skewX(-45deg) translateX(-100%);
   -ms-transform: skewX(-45deg) translateX(-100%);
@@ -329,13 +329,7 @@ td, th {
   }
 }
 /**
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
+ * Zh3tta-games | Todos los derechos reservados
  */
 .clear::before, .clear::after {
   content: " ";
@@ -2461,7 +2455,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project-area4 {
-  background-color: #444444;
+  background-color: #778899;
 }
 
 .active-works-carousel .item .thumb {
