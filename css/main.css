@@ -4,7 +4,7 @@
 /* Mobile Layout: 320px */
 /* Wide Mobile Layout: 480px */
 /* =================================== */
-/*  Basic Style 
+/*  estilos basicos 
 /* =================================== */
 ::-moz-selection {
   /* Code for Firefox */
@@ -171,6 +171,7 @@ td, th {
   position: relative;
   overflow: hidden;
   margin: 15px 0px;
+  border-radius: 
 }
 
 .shop1 {
@@ -179,60 +180,8 @@ td, th {
   margin: 15px 0px;
 }
 
-.shop:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0px;
-  width: 60%;
-  background: #F0FFFF;
-  opacity: 0.7;
-  -webkit-transform: skewX(-45deg);
-  -ms-transform: skewX(-45deg);
-  transform: skewX(-45deg);
-}
-
-.shop:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 1px;
-  width: 100%;
-  background: #7FFFD4;
-  opacity: 0.7;
-  -webkit-transform: skewX(-45deg) translateX(-100%);
-  -ms-transform: skewX(-45deg) translateX(-100%);
-  transform: skewX(-45deg) translateX(-100%);
-}
-
-.shop1:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0px;
-  width: 60%;
-  background: #F4FC99;
-  opacity: 0.7;
-  -webkit-transform: skewX(-45deg);
-  -ms-transform: skewX(-45deg);
-  transform: skewX(-45deg);
-}
-
-.shop1:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 1px;
-  width: 100%;
-  background: #D2FCFF;
-  opacity: 0.7;
-  -webkit-transform: skewX(-45deg) translateX(-100%);
-  -ms-transform: skewX(-45deg) translateX(-100%);
-  transform: skewX(-45deg) translateX(-100%);
+.shop img {
+  border-radius: 20px;
 }
 
 .shop-img>img {
@@ -261,7 +210,7 @@ td, th {
 }
 
 .shop-img>img {
-  border:5px solid green;
+  border:5px solid blue;
   border-radius: 20px;
   padding: 2px 10px;
   font-size: 12px;
@@ -328,6 +277,57 @@ td, th {
     margin-top: 10px;
   }
 }
+
+/**carrusel del inicio**/
+
+.carousel__contenedor {
+  position: relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  top: calc(50% - 35px);
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  background: none;
+  color: #F9FBFF; 
+  opacity: 20%;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+  opacity: 100%;
+}
+
+.carousel__anterior {
+  left: -30px;
+}
+
+.carousel__siguiente {
+  right: -30px;
+}
+
+.carousel__lista {
+  overflow: hidden;
+}
+
+.carousel__lista2 {
+  overflow: hidden;
+}
+
+@media (max-width: 650px) {
+  .carousel__anterior,
+  .carousel__siguiente {
+    display: none;
+  }
+}
+ 
 /**
  * Zh3tta-games | Todos los derechos reservados
  */
@@ -2111,13 +2111,13 @@ h1, h2, h3, h4, h5, h6 {
 .p1-gradient-bg, .primary-btn, .primary-btn2:hover, .single-feature:hover, .video-area .overlay-bg, .single-footer-widget .click-btn, .generic-banner {
   background-image: -moz-linear-gradient(0deg, #b21aff 0%, #732bde 100%);
   background-image: -webkit-linear-gradient(0deg, #b21aff 0%, #732bde 100%);
-  background-image: -ms-linear-gradient(0deg, #b21aff 0%, #732bde 100%);
+  background-image: -ms-linear-gradient(0deg, #0491AE 0%, #732bde 100%);
 }
 
 .p1-gradient-color, .counter-left h2, .footer-social a:hover i, .single-footer-widget .bb-btn {
-  background: -moz-linear-gradient(0deg, #b21aff 0%, #732bde 100%);
-  background: -webkit-linear-gradient(0deg, #b21aff 0%, #732bde 100%);
-  background: -ms-linear-gradient(0deg, #b21aff 0%, #732bde 100%);
+  background: -moz-linear-gradient(0deg, #1E3166 0%, #10359C 100%);
+  background: -webkit-linear-gradient(0deg, #1E3166 0%, #10359C 100%);
+  background: -ms-linear-gradient(0deg, #1E3166 0%, #10359C 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -2333,7 +2333,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 800px) {
   .default-banner {
-    padding-bottom: 40px;
+    padding-bottom: 0px;
   }
 }
 
@@ -2439,7 +2439,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project-area {
-  background-color: #f9f9ff;
+  background-color: #515D7B;
 }
 
 .project-area1 {
@@ -2447,7 +2447,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project-area2 {
-  background-color: #DCDCDC;
+  background-color: #515D7B;
 }
 
 .project-area3 {
@@ -2455,7 +2455,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project-area4 {
-  background-color: #778899;
+  background-color: #AEA2A2;
 }
 
 .active-works-carousel .item .thumb {
@@ -2648,45 +2648,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
-}
-
-.video-area {
-  padding: 200px 0 60px 0;
-  position: relative;
-  background: url(../img/video-bg.jpg) no-repeat center center/cover;
-}
-
-.video-area .overlay-bg {
-  opacity: .6;
-}
-
-.video-area .video-content {
-  text-align: center;
-  position: relative;
-  z-index: 2;
-}
-
-.video-area .video-content a {
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-.video-area .video-content h3 {
-  font-weight: 600;
-  font-size: 18px;
-  margin-bottom: 10px;
-  letter-spacing: 2px;
-}
-
-.video-area .video-content h4 {
-  font-weight: 300;
-  font-size: 14px;
-}
-
-.video-area .video-content .video-desc {
-  margin-top: 120px;
-  text-align: right;
-  align-self: flex-end;
 }
 
 .single-contact-info {

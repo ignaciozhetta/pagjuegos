@@ -145,3 +145,68 @@ $('.active-blog-slider').owlCarousel({
       });   
 
  });
+
+
+//-------- slide carrusel Js ----------//
+
+window.addEventListener('load', function(){
+  new Glider(document.querySelector('.carousel__lista'), {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: '.carousel__indicadores',
+    arrows: {
+      prev: '.carousel__anterior',
+      next: '.carousel__siguiente'
+    },
+    responsive: [
+    {
+      // pantallas de más de >= 690px
+      breakpoint: 690,
+      settings: {
+        // Establecer en 'auto' y proporcionar el ancho del elemento para ajustar a la ventana gráfica
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },{
+      // pantallas de más de >= 1024px
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 6,
+        slidesToScroll: 6
+      }
+    }
+  ]
+  });
+});
+
+//-------- slide carrusel Js 2 ----------//
+
+window.addEventListener('load', function(){
+  new Glider(document.querySelector('.carousel__lista2'), {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: '.carousel__indicadores2',
+    arrows: {
+      prev: '.carousel__anterior',
+      next: '.carousel__siguiente'
+    },
+    responsive: [
+    {
+      // pantallas de más de >= 690px
+      breakpoint: 690,
+      settings: {
+        // Establecer en 'auto' y proporcionar el ancho del elemento para ajustar a la ventana gráfica
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },{
+      // pantallas de más de >= 1024px
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 6,
+        slidesToScroll: 6
+      }
+    }
+  ]
+  });
+});
